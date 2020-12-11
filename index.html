@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Chicken Calculator</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="images/tip.png" type="image/x-icon"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <div id="main">
+   <h1>Chicken Chaser</h1>
+   <div id="calulator">
+     <form id="form">
+       <p>Total Chicken Deaths:
+         <p>RIP<input id="chknTotal" type="text" placeholder="# of chickens ran over">
+           <p>How Fast Were You Going:
+             <select id="spdPercentage" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+               <option disabled selected value="0">Speed While Chicken Chasing</option>
+               <option value="1.0"> I Might Need Bail:/ 100+ </option>
+               <option value="0.8"> What Had Happened Officer... 80 </option>
+               <option value="0.6"> Let Me Explain... 60  </option>
+               <option value="0.4"> Give Me A Break! 40 </option>
+               <option value="0.2"> Can You Let Me Off With A Warning? 20 </option>
+               <option value="other">Let Me Be Specific </option>
+             </select>
+             <input id="mphNum" type="text" placeholder="My Speed in mph"><span id="percentage"></span>
+     </form>
+     <p>Chickens Missed</p>
+     <input id="numChicken" type="text" placeholder="# of missed"> chickens
+     <button type="button" id="calculate">Push For Score!</button>
+
+     <button type="button" id="clear">Clear</button>
+   </div>
+   <div id="totalSpd">
+     YOU SCORED <span id="tip">0.00</span>
+     <small id="each">POINTS!</small>
+   </div>
+ </div>
+ <script type="text/javascript" src="index.js"></script>
+
+ <script src="js/index.js"></script>
+</body>
+<footer>
+</footer>
+</html>
+
+
